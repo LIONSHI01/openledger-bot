@@ -6,3 +6,6 @@ services:
     build: .
     command: /bin/sh -c "yarn && node index.js "
     restart: always
+    volumes:
+      - ./:/usr/src/app # Mounting a host directory to the container
+
